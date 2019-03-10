@@ -2,16 +2,12 @@
 Theme Name: ME – Resume and Personal Portfolio Responsive Template
 Author URI: http://webthemez.com/
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
 }
 body {
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
 	background: #fff;
 }
 ::selection {
@@ -23,6 +19,7 @@ body {
  color: #fff;
  background: #FF7A00;
 }
+h1 {padding: 25px!important;}
 p {
 	color: #858585;
 	line-height: 22px;
@@ -112,7 +109,6 @@ h2 {
 	font-size: 40px;
 	margin: 0;
 	padding-bottom: 16px;
-	font-variant: small-caps;
 }
 /* Header
 ----------------------------------------------*/
@@ -215,7 +211,6 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .navbar-brand b {
 	color: #fff;
-	font-family: 'Pacifico', cursive;
 	font-weight: 400;
 }
 .logo {
@@ -342,8 +337,6 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .heading {
 	padding: 3px 10px;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
 	display: block;
 }
 .pdingBtm30 {
@@ -376,25 +369,10 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 .secPad {
 	padding: 60px 0;
 }
-/*Intro Content*/
-#introText {
-	padding: 50px 0;
-	background: #320606;
-}
-#introText h1 {
-	font-size: 40px;
-	margin: 0;
-	padding-bottom: 16px;
-	font-variant: small-caps;
-	color: #fff;
-}
-#introText p {
-	color: #FFD2A8;
-	font-size: 16px;
-}
+
 #aboutUs{
 padding-top:60px;
-background-color: rgb(16, 15, 15);
+background-color: #2079B9;
 	}
 #aboutUs .txtHead {
 	background: #fff;
@@ -404,8 +382,16 @@ background-color: rgb(16, 15, 15);
 	font-size: 58px;
 	color: #5E5E5E;
 }
+
+.tileBox:nth-of-type(2) {
+	border-radius: 10px;
+  background-color: #fff;
+}
+
+.tileBox {
+	margin-bottom: 60px;
+}
 .tileBox p {
-	background-color: #f0f0f0;
 	font-size: 15px;
 	color: #777777;
 	padding: 20px;
@@ -475,7 +461,6 @@ min-height:200px;
 	line-height: 110px;
 	z-index: 2;
 	font-size: 40px;
-	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	letter-spacing: -1px;
 	margin: 21px 0 0 0;
@@ -484,7 +469,6 @@ min-height:200px;
 .percent:after {
 	content: '%';
 	margin-left: 0.1em;
-	font-family: 'Oswald', sans-serif;
 	font-weight: 100;
 }
 .chart canvas {
@@ -530,6 +514,22 @@ min-height:200px;
     -------------------------------------------------*/
 .grid .text-content {
 	padding-left: 35%;
+}
+.tileBox img {
+	height: 238px;
+	border-radius: 10px;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.position-bottom-22 {
+	bottom: 22px;
+}
+
+.divider {
+	border-top: 1px groove #858585;
 }
 .grid .text-content {
 	display: block;
@@ -737,7 +737,6 @@ hr {
 }
 body {
 	margin: 0;
-	font-family: Arial, sans-serif;
 }
 #navigation {
 	position: fixed;

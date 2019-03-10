@@ -7,11 +7,12 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="images/portfolio.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!--[if lt IE 9]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-<title>ME – Resume and Personal Portfolio Responsive Template</title>
+<title>VinodhRaja</title>
 <meta name="description" content="">
 <meta name="author" content="WebThemez">
 <!--[if lt IE 9]>
@@ -20,6 +21,9 @@
 <!--[if lte IE 8]>
 		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
 	<![endif]-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script type="text/javascript" src="js/angular.min.js"></script>
 <scirp src="js/angular.min.js.map"></script>
 <script type="text/javascript" src="js/app.js"></script>
@@ -30,6 +34,10 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script>
+  AOS.init();
+</script>
 </head>
 
 <body ng-app="MyApplication">
@@ -38,7 +46,8 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo"><b>Me..</b></a> </div>
+      </div>
+        <!-- <a href="#" class="navbar-brand scroll-top logo">Vinodh</a> </div> -->
       <!--/.navbar-header-->
         <navigation-menu></navigation-menu>
       <!--/.navbar-collapse-->
@@ -48,40 +57,35 @@
   <!--/.container-->
 </header>
 <!--/.header-->
+
 <div id="#top"></div>
 <section id="home" ng-controller="homeController">
-  <div class="banner-container"> <img src="images/banner-bg-code.jpg" alt="banner" />
+  <div class="banner-container"> <img src="images/background-panel.jpg" alt="banner" />
     <div class="container banner-content">
       <div class="heroText">
-        <h2 style="color: red"><span>HEllo, I'm</span><br>
-          {{myName}}</h2>
-        <span class="caption" style="color: red">Frontend Developer/ Fullstack Developer</span> </div>
+        <!-- <h2>{{myName}}</h2> -->
     </div>
   </div>
 </section>
-<section id="introText">
+<section>
   <div class="container">
-    <div>
-      <h1>I create beautiful responsive websites, Yes I am a UI geek</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. Nulla vehicula condimentum purus, quis imperdiet nisl ultricies eleifend. Nulla quis rhoncus risus. Ut vel vehicula urna.</p>
+    <div data-aos="fade-up">
+      <h1 class="text-center">Frontend / Full stack Developer</h1>
     </div>
   </div>
 </section>
 <!--About-->
 <section id="aboutUs">
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-down">
       <!-- item -->
-      <div class="col-md-4 tileBox"> <img width="93%" src="images/photo-2.jpg" alt="me"/> </div>
+      <div class="col-md-4 tileBox"> <img width="100%" src="images/portfolio.jpg" alt="me"/> </div>
       <div class="col-md-8 tileBox">
-        <div class="txtHead">
-          <h2>I am VinodhRaja,</h2>
-          <h3> Web Front End Developer/Backend Developer Based in Chennai, India.</h3>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitendisse interdum erat et neque tincidunt volutpat. Cras eget. Suspendisse interdum erat et neque tincidunt volutpat. <br/>
-          <br/>
-          Cras eget augue id dui varius pretium.
-          Consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius.</p>
+        <p>
+          It is my dream to be in the technology / computer / software field from my childhood as I got the inspiration from one of my neighbor. That drove me to do masters' degree in to the computer study although I did bachelor' degree in physics. <br><br>
+          I always love this and gives me a daily learning experience.<br><br>
+          Now it is 9 plus years of experience in the software field and has gotten / and getting (currently) the chance to work in amazing projects where I can prove my own strengths and learn new things.<br><br>
+        </p>
       </div>
       <!-- end: -->
     </div>
@@ -92,7 +96,9 @@
   <div class="parlex-back">
     <div class="container">
      <div class="row">
-	<div class="col-md-12">      <h2>“Dreams are extremely important. You can’t do it unless you imagine it.” <span>-George Lucas</span></h2></div>
+	      <div class="col-md-12" data-aos="fade-right">
+          <h2>“Dreams are extremely important. You can’t do it unless you imagine it.” <span>-George Lucas</span></h2>
+        </div>
       </div>
     </div>
     <!--/.container-->
@@ -104,36 +110,35 @@
   <div class="container">
     <div class="heading ">
       <!-- Heading -->
-      <h2>My Skills</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. </p>
+      <h2>My Technology stacks</h2>
     </div>
     <div class="row skillContainer">
       <div class="col-md-4 skillBox">
         <div id="diagram-id-1" class="diagram" data-percent="95.2%"></div>
         <div class="chart-text">
-          <h4>Visual Designing</h4>
-          <p>Exp 4 years</p>
+          <h4>Frontend Technologies</h4>
+          <p>Exp 9 plus years</p>
         </div>
       </div>
       <div class="col-md-4 skillBox">
-        <div id="diagram-id-2" class="diagram" data-percent="75.2%"></div>
+        <div id="diagram-id-2" class="diagram" data-percent="65.2%"></div>
         <div class="chart-text">
-          <h4>Frontend Developer</h4>
-          <p>Exp 8 years</p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-3" class="diagram" data-percent="85.6%"></div>
-        <div class="chart-text">
-          <h4>Backend Developer</h4>
+          <h4>Backend Technologies</h4>
           <p>Exp 5 years</p>
+        </div>
+      </div>
+      <div class="col-md-4 skillBox">
+        <div id="diagram-id-3" class="diagram" data-percent="100%"></div>
+        <div class="chart-text">
+          <h4>Fullstack Technologies</h4>
+          <p>Exp 9 plus years</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <h2>Programming Skills</h2>
-        <p class="mrgBtm20"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        <h2>Technologies I have been working so far</h2>
+        <p class="mrgBtm20"> I have always been fascinated with frontend technologies, even have the experience on working backend skills, and the ability to encourage the expansion of the imaginations... </p>
       </div>
       <div class="col-sm-6"> <br/>
         <br/>
@@ -142,7 +147,7 @@
           <div class="col-md-2 skilltitle"><b>HTML5</b></div>
           <div class="col-md-10">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> <span class="sr-only">90% Complete</span> </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">90% Complete</span> </div>
             </div>
           </div>
         </div>
@@ -150,7 +155,7 @@
           <div class="col-md-2 skilltitle"><b>JavaScript</b></div>
           <div class="col-md-10">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">80% Complete</span> </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">80% Complete</span> </div>
             </div>
           </div>
         </div>
@@ -158,12 +163,36 @@
           <div class="col-md-2 skilltitle"><b>Angular</b></div>
           <div class="col-md-10">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">75% Complete</span> </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-2 skilltitle"><b>EmberJs</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>ReactJS</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>PHP</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>MySql</b></div>
           <div class="col-md-10">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
@@ -175,160 +204,259 @@
   </div>
 </section>
 
-<!--Experience-->
-<section id="experience" class="secPad">
 <div class="container">
-<div class="heading">
-  <!-- Heading -->
-  <h2>Experience</h2>
-  <br/>
-  <h4>9 plus Years Experience!</h4>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+  <div class="divider"></div>
 </div>
-<div class="row experience-details">
-  <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa fa-cogs"></i></div>
-      <div class="pull-left">
-        <h5>Infore Managment</h5>
-        <h4>Consultant</h4>
-        <span>2013 - 2014</span> </div>
+<!--Experience-->
+<section id="partners" class="secPad">
+  <div class="container">
+    <div class="row experience-details" data-aos="flip-left">
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-ember"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>British Gas via Cognizant Technology</h5>
+            <h4>Product Engineer / Technology Lead</h4>
+            <span>July 2015 - still working here</span>
+          </div>
+        </div>
+        <div class="col-md-7"> I work for a UK’s one of the biggest energy and gas provider as product engineer along with 100 plus front-end developers. We follow agile and Kanban methodologies here. <br><br>
+          1.	Participating retro, low level refinement, high level refinement.<br>
+          2.	Backend API designing, giving architectural ideas to the teams, PR (Pull request) reviews, estimating the task and time frame, updating the status about the functionality and the profit to the business stakeholders on every sprint finish.<br>
+          3.	Developing single page application using ember.js, JavaScript, handlebar, CSS, HTML, glimmer.js, react.js.<br>
+          4.	In the interview panel for the recruitment on the customer side as well as cognizant side.<br>
+          5.	Managing a team of 5 members.<br>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-js"></i>
+            <i class="fab fa-ember"></i>
+            <i class="fab fa-angular"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>Cognizant Technology</h5>
+            <h4>Associate</h4>
+            <span>November 2013 to July 2015</span>
+          </div>
+        </div>
+        <div class="col-md-7"> Worked for a bank from Brussel as senior web developer.<br><br>
+          1.	Attending daily standups and status updates.<br>
+          2.	Getting the task via JIRA and discussing about the functionality from offshore to the team in Brussels.<br>
+          3.	Planning and giving suggestions about the functionality before development<br>
+          4.	Creating single page application in Angular, JavaScript, Coffee script, GitHub, HTML, CSS, D3.js, JQuery, and ember.js.<br>
+          5.	Taking interviews for the recruitment.<br>
+        </div>
+      </div>
     </div>
-    <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div>
-  </div>
-  <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa fa-send-o"></i></div>
-      <div class="pull-left">
-        <h5>Infore Managment</h5>
-        <h4>Consultant</h4>
-        <span>2011 - 2013</span> </div>
+    <div class="row experience-details" data-aos="flip-left">
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-php"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-code-merge"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>Photon Infotech</h5>
+            <h4>Software Engineer</h4>
+            <span>September 2012 to November 2013</span>
+          </div>
+        </div>
+        <div class="col-md-7">
+          Worked for educational apps for the one of the client from United States.<br><br>
+          1.	Collecting the requirements via meetings from the architects in US <br>
+          2.	Developing the application using Php, MySql, CodeIgniter, Javascript, Jquery, Ajax, HTML, CSS and SQL.<br>
+          3.	Fixing defects <br>
+          4.	Reviewing Pull Requests.<br>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-php"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-js"></i>
+            <i class="fas fa-code-merge"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>Laserwords Pvt Ltd</h5>
+            <h4>Programmer</h4>
+            <span>October 2011 to August 2012</span>
+          </div>
+        </div>
+        <div class="col-md-7">
+          Worked for the e-publishing company. <br><br>
+            1.	Collecting requirements and analyzing the requirements. <br>
+            2.	Created application tools which can make the editing process automated.<br>
+            3.	Used PHP, Mysql, Ajax, Javascript, HTML and CSS<br>
+        </div>
+      </div>
     </div>
-    <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div>
-  </div>
-</div>
-<div class="row experience-details">
-  <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa fa-shopping-cart"></i></div>
-      <div class="pull-left">
-        <h5>Infore Managment</h5>
-        <h4>Consultant</h4>
-        <span>2008 - 2011</span> </div>
+    <div class="row experience-details" data-aos="flip-left">
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-php"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-js"></i>
+            <i class="fas fa-code-merge"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>Pixint Graphics Pvt Ltd </h5>
+            <h4>Web Developer</h4>
+            <span>August 2010 to August 2011</span>
+          </div>
+        </div>
+        <div class="col-md-7">
+          1.	Had the chance to work on so many websites and applications with tight schedule. <br>
+          2.	Created applications using PHP, MysQl, Ajax, Javascript, HTML and CSS <br>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-5">
+          <div class="icon-block">
+            <i class="fab fa-php"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-js"></i>
+            <i class="fas fa-code-merge"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="pull-left">
+            <h5>Office Management systems</h5>
+            <h4>Web Developer</h4>
+            <span>July  2009 – July 2010</span>
+          </div>
+        </div>
+        <div class="col-md-7">
+          1.	Got the opportunity to work when I started my career. <br>
+          2.	Developing the websites using PHP, Mysql, HTML, CSS, Javscript and Jquery<br>
+        </div>
+      </div>
     </div>
-    <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div>
   </div>
-  <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa fa-futbol-o"></i></div>
-      <div class="pull-left">
-        <h5>Infore Managment</h5>
-        <h4>Consultant</h4>
-        <span>2002 - 2008</span> </div>
-    </div>
-    <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div>
-  </div>
-</div>
 </section>
 
 <!--Portfolio-->
-<section id="portfolio" class="page-section section appear clearfix secPad">
+<section id="portfolio" class="page-section section appear clearfix secPad" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
   <div class="container">
     <div class="heading">
       <!-- Heading -->
       <h2>Portfolio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat.</p>
     </div>
     <div class="row">
       <nav id="filter" class="col-md-12">
         <ul>
-          <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+          <li><a href="#" class="current btn-theme btn-small" data-filter="*">PHP</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">React.Js</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Angular</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".print">EmberJS</a></li>
         </ul>
       </nav>
       <div class="col-md-12">
         <div class="row">
           <div class="portfolio-items isotopeWrapper clearfix" id="3">
             <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images/portfolio/img1.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img1.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img1.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img1.png" class="fancybox">
+                    <h5>Quill.Js with Ember.JS</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img2.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img2.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img2.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img2.png" class="fancybox">
+                    <h5>PHP</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img3.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img3.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img3.png" class="fancybox">
+                    <h5>PHP</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img4.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img4.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img4.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img4.png" class="fancybox">
+                    <h5>D3 with Angular</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img5.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img5.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img5.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img5.png" class="fancybox">
+                    <h5>PHP</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images/portfolio/img6.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img6.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img6.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img6.png" class="fancybox">
+                    <h5>PHP</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img7.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img7.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img7.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img7.png" class="fancybox">
+                    <h5>React.js</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img8.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img8.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img8.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img8.png" class="fancybox">
+                    <h5>Google Recaptcha with Ember.JS</h5>
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
             <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img9.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images/portfolio/img9.png" height="300px" alt="" />
                 <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img9.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                  <div class="folio-info"> <a href="images/portfolio/img9.png" class="fancybox">
+                    <!-- <h5>Project Name</h5> -->
+                    <i class="fas fa-eye"></i></a> </div>
                 </div>
               </div>
             </article>
@@ -345,37 +473,15 @@
     <div class="row">
       <div class="heading">
         <!-- Heading -->
-        <h2>Let's Keep In Touch!</h2>
-        <p>Thank you for visiting out my profile. If you would like to get into contact with me,</p>
+        <h2>To Contact me</h2>
       </div>
     </div>
     <div class="row mrgn30">
-      <form method="post" action="" id="contactfrm" role="form" class="hidden">
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="comments">Comments</label>
-            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-          </div>
-          <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-          <div class="result"></div>
-        </div>
-      </form>
       <div class="col-sm-4">
         <h4>Address:</h4>
         <address>
-        VinodhRaja Muralidharan<br>
-        22 - Arnold Road<br>
-        Staines - TW181LX - United Kingdom<br>
+        22, Arnold Road<br>
+        Staines-upon-thames, United Kingdom - TW181LX<br>
         </address>
         <h4>Phone:</h4>
         <address>
@@ -392,7 +498,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="social pull-left"> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-flickr"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
+        <div class="social pull-left">
+          <!-- <a href="#"><i class="fa fa-twitter"></i></a>  -->
+          <a target="_blank" href="https://github.com/vinodhrajamuralidharan"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/vinodh-raja-muralidharan-3b4b2636"><i class="fab fa-linkedin"></i></a>
+          <!-- <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-flickr"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>  -->
+        </div>
       </div>
       <div class="col-md-6"> <span class="pull-right">Copyright 2019 | All Rights Reserved </span> </div>
     </div>
