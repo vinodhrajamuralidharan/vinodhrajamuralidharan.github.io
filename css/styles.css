@@ -100,6 +100,14 @@ a:hover {
 	z-index: 5;
 	background: #FF7A00;
 }
+
+.my-image {
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	z-index: 5;
+	width: 20%;
+}
 .topHome .fa-2x {
 	font-size: 20px;
 	color: #fff;
